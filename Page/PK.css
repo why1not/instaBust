@@ -1,0 +1,181 @@
+*{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*::-webkit-scrollbar{
+    background-color: #222124;;
+    width: 1vh;
+}
+*::-webkit-scrollbar-track{
+    background-color: rgba(0,0,0,0);
+}
+*::-webkit-scrollbar-thumb{
+    background-color: rgb(4, 152, 113); 
+    border-radius: 100px;
+}
+section{
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    font-weight: 800;
+}
+
+section:nth-child(odd){
+    background-color: #222125;
+}
+section:nth-child(even){
+    background-color: #141316;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #111112;
+    text-align: right;
+}
+#n2 {
+    background-image: url('../images/1677081749705.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.NavHide{
+    position: absolute;
+    top: 0;
+    right: calc(50% - 3.5vw);
+    height: 6vh;
+    width: 7vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: .2s all linear;
+    background: #111112;
+    border-bottom-left-radius: 3mm;
+    border-bottom-right-radius: 3mm;
+    overflow: hidden;
+}
+.NavHideClick{
+    position: absolute;
+    top: 6vh;
+    right: 0;
+    height: 6vh;
+    width: 7vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: .2s all linear;
+    background: #111112;
+    border-bottom-left-radius: 3mm;
+    overflow: hidden;
+}
+.NavHide:hover, .NavHide:focus{
+    background: #1e1e20;
+}
+.buttonHide{
+    color: white;
+    text-decoration: none;
+    font-size: 0.7em;
+    height: 100%;
+    width: 7vw;
+    background: none;
+    border: none;
+    border-radius: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.NavOpen{
+    position: absolute;
+    top: 0;
+    width: 90%;
+    display: flex;
+    align-content: center;
+    justify-content: right;
+    padding-right: 10%;
+    transition: .2s all linear;
+    background: #111112;
+    overflow: hidden;
+    animation: 0.5s OpenNav forwards;
+}
+@keyframes OpenNav{
+    0%{
+        height: 0vh
+    }
+    100%{
+        height: 6vh
+    }
+}
+.NavOpen input{
+    background: none;
+    border: none;
+    color: white;
+    width: 6vw;
+    font-size: 1.7vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.NavOpen input:hover{
+    background: #1e1e20;
+}
+#n3 {
+    display: block;
+    background-color: #000;
+
+}
+
+
+
+.Razedenitel{
+    width: 100%;
+    height: 37vh;
+    background: url('../images/1677164097644.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    filter: brightness(60%);
+
+}
+.Razedenitelaa{
+    height: 32%;
+    filter: brightness(140%);
+}
+.Logotipius{
+    height: 100%;
+}
+.LogoZone{
+    position: absolute;
+    
+    top: 0.5vh;
+    left: 7vw;
+    width: max-content;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+.LogoZone label{
+    color: white;
+    font-size: 3.6vh;
+    line-height: 5vh;
+    display: flex;
+    align-items: center;
+    margin-left: 1vh;
+
+}
